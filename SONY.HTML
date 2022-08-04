@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Peter's Page</title>
+</head>
+
+<body> 
+         
+<p id="dolphin">This is JavaScript working in the DOM</p>      
+        
+<script>
+    var canvas = document.createElement('canvas'); 
+    canvas.width = 500;
+    canvas.height = 250;
+    var ctx = canvas.getContext('2d');
+    ctx.font = '30px Cursive'; 
+   
+
+    var age = prompt("How old are you?");
+    document.getElementById("dolphin").textContent = age 
+    var element = document.createElement('p');
+    element.textContent = age;
+    document.body.appendChild(element);
+    ctx.fillText(age, 50, 50);
+    document.body.appendChild(canvas);
+
+
+    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); 
+    svg.width = 500;
+    svg.height  =  50;
+    var text = document.createElementNS('http://www.w3.org/2000/svg', 'text'); text.setAttribute('x', '0');
+    text.setAttribute('y', '50'); 
+    text.style.fontFamily = 'Times New Roman'; 
+    text.style.fontSize = '50';
+    text.textContent = "South America";
+
+
+</script>
+
+</body>
+
+</html>
